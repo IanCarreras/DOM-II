@@ -15,7 +15,6 @@ let textAngle = 0
 const counterClockwise = (event) => {
     event.stopPropagation()
     textAngle -= 90
-    console.log(event)
     return  event.target.style.transform = `rotate(${textAngle}deg)`
 }
 
@@ -70,7 +69,6 @@ const moveFunBus = (event) => {
 }
 
 const changeBackground = (event) => {
-    event.stopPropagation()
     return event.target.style.backgroundColor = 'green'
 }
 

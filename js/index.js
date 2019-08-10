@@ -4,6 +4,7 @@ const h2 = document.querySelectorAll('h2')
 const p = document.querySelectorAll('p')
 const btn = document.querySelectorAll('.btn')
 const section = document.querySelector('section')
+const navItems = document.querySelectorAll('.nav-link')
 
 let pictureAngle = 0
 const clockWise = (event) => {    
@@ -86,3 +87,6 @@ btn.forEach(button => {
     button.addEventListener('dragend', dropButton)
 })
 section.addEventListener('click', changeBackground)
+navItems.forEach((item) => item.addEventListener('click', (event) => {
+    event.preventDefault()
+}))
